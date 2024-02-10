@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Mídias de Programas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Mídias de Programas</h1>
+  <form action="cadastrar.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <label for="tipo">Tipo:</label>
+    <select name="tipo" id="tipo">
+      <option value="DVD">DVD</option>
+      <option value="CD">CD</option>
+      <option value="Blu-ray">Blu-ray</option>
+      <option value="Flash Drive">Flash Drive</option>
+    </select>
+    <br>
+    <label for="duracao">Duração:</label>
+    <input type="time" name="duracao" id="duracao">
+    <br>
+    <label for="data_aquisicao">Data de Aquisi&ccedil;&atilde;o:</label>
+    <input type="date" name="data_aquisicao" id="data_aquisicao">
+    <br>
+    <label for="obs"> observação:</label>
+    <textarea name="obs" id="obs"></textarea>
+    <br>
+    <input type="submit" value="Cadastrar">
+    <input type="reset" value="Limpar">
+  </form>
+</body>
+</html>
